@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calcmate</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="container layout">
+        	<h1>CalcMate</h1>
+            <div class="input-box">
+                    <input id="first-input-screen" type="text">
+                </div>
+                <div class="output-box">
+                    <input id="second-input-screen" type="text" readonly>
+                </div>
+
+            <div class="row">
+                <div class="col second-row">
+                    <button id="all-clear" class="btn-3d" type="submit" onclick="allClear()">Ac</button>
+                    <button id="delete" class="btn-3d" type="submit" onclick="deleteOne()">Del</button>
+                    <button id="divide" class="btn-3d" type="submit" onclick="appendOper('/')">/</button>
+                    <button id="multiply" class="btn-3d" type="submit" onclick="appendOper('*')">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col third-row">
+                    <button id="add" class="btn-3d" type="submit" onclick="appendValue('7')">7</button>
+                    <button id="subtract" class="btn-3d" type="submit" onclick="appendValue('8')">8</button>
+                    <button id="add" class="btn-3d" type="submit" onclick="appendValue('9')">9</button>
+                    <button id="subtract" class="btn-3d" type="submit" onclick="appendOper('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col fourth-row">
+                    <button id="add" class="btn-3d" type="submit" onclick="appendValue('4')">4</button>
+                    <button id="subtract" class="btn-3d" type="submit" onclick="appendValue('5')">5</button>
+                    <button id="add" class="btn-3d" type="submit" onclick="appendValue('6')">6</button>
+                    <button id="subtract" class="btn-3d" type="submit" onclick="appendOper('+')">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col fifth-row">
+                    <button id="add" class="btn-3d btn-one" type="submit" onclick="appendValue('1')">1</button>
+                    <button id="subtract" class="btn-3d btn-two" type="submit" onclick="appendValue('2')">2</button>
+                    <button id="add" class="btn-3d btn-three" type="submit" onclick="appendValue('3')">3</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col sixth-row">
+                    <button id="add" class="btn-3d" type="submit" onclick="appendValue('0')">0</button>
+                    <button id="subtract" class="btn-3d" type="submit" onclick="appendOper('.')">.</button>
+                    <button id="add" class="btn-3d" type="submit" onclick="outputResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
